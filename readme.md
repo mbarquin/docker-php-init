@@ -3,24 +3,20 @@ docker-php-init
 
 Introduction
 ------------
-This library is intended to be used with PHPUnit tool. DataPool is an iterable object which can be
-returned to a standard @dataprovider tagged function or it can be used to get specific datasets from a big datapool.
+This repository is intended to contain an empty PHP project skeleton, using composer as main dependency manager and
+docker as project server virtualization, database will be a second mysql container via docker compose
 
-* It allows keeping low weight indexed array values separated from tests logic.
-* It can return specific datasets attending to its dataset index.
-* It can encapsulate dataset as an array to avoid large parameters lists.
+* Docker allows update/install composer autoload and dependencies.
+* Docker container php-apache will serve all php-apache projects (same versions) with the same image.
+* Docker container mysql will serve database exposed to php container using the same image for all mysql projects
 
 Installation
 ------------
 
 You can install the component in the following ways:
 
-* Use the official Github repository (https://github.com/mbarquin/datapool)
-* Use composer : composer require mbarquin/datapool --dev
+* Use the official Github repository (https://github.com/mbarquin/docker-php-init)
 
 Usage
 -----
 
-The main use purpose is via heritage, the final class will only contains a definition
-index and a dataArray, we can instance it into our test case as a dataprovider or as
-a normal object which vill provide us with predefined test cases.
