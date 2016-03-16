@@ -1,0 +1,5 @@
+**/nbproject/**
+**/files/**
+/composer.lock
+/www/vendor/
+/src/vendor/
