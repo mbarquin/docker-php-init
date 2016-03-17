@@ -25,4 +25,6 @@ EXPOSE 80
 
 #docker build -t='docker-php-init' .
 #docker run --rm -v /var/www/docker-php-init:/var/www -t docker-php-init composer install
-docker run -p 80 -v /var/www/docker-php-init:/var/www -d -t -i 228a90f50b90 /bin/bash
+#docker run -p 80 -v /var/www/docker-php-init:/var/www -d -t -i 228a90f50b90 /bin/bash
+
+#docker run -p 80 -v /var/www/docker-php-init:/var/www -t -i 6d98f637fbd5
