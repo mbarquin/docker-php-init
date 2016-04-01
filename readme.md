@@ -9,6 +9,7 @@ docker as project server virtualization, database will be a second mysql contain
 * Docker allows update/install composer autoload and dependencies.
 * Docker container php-apache will serve all php-apache projects (same versions) with the same image.
 * Docker container mysql will serve database exposed to php container using the same image for all mysql projects
+* Docker containers can be build / run with docker compose
 
 Installation
 ------------

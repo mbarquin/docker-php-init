@@ -1,0 +1,15 @@
+
+web:
+  build: .
+  links:
+    - db
+  volumes:
+    - .:/var/www
+    - ./tmp:/tmp
+db:
+  image: mysql:5.6
+  environment:
+    MYSQL_DATABASE: MyApp
+    MYSQL_ROOT_PASSWORD: Mypass
+  volumes:
+      - ./mysqlDB:/var/lib/mysql
