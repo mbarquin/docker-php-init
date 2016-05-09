@@ -12,4 +12,4 @@ db:
     MYSQL_DATABASE: MyApp
     MYSQL_ROOT_PASSWORD: Mypass
   volumes:
-      - ./mysqlDB:/var/lib/mysql
+      - ./db:/var/lib/mysql

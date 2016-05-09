@@ -1,7 +1,7 @@
 FROM php:5.6-apache
 
 ENV APACHE_ROOT_DIR /var/www/src/public
-ENV APACHE_LOG_DIR /var/www/logs
+ENV APACHE_LOG_DIR /var/www/log/apache
 
 ENV PROJECT_ROOT_DIR /var/www
 
